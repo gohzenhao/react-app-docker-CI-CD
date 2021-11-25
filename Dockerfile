@@ -11,4 +11,4 @@ COPY --from=builder /app/build /usr/share/nginx/html
 #no need to 'start' ngix cause it automatically starts when we call the base image
 
 
-#Elastic bean stalk will look for EXPOSE instructin and use that as the port that get map to incoming traffics
+#Elastic bean stalk will look for EXPOSE instruction and use that as the port that get map to incoming traffics
