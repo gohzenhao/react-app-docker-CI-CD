@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Reactz
+          I was changed
         </a>
       </header>
     </div>
