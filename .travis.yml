@@ -25,7 +25,7 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+    secure: $AWS_SECRET_KEY
 
 #bucket_name
 #when travis deploys your code base, gonna zip all the files in the github repo into a single file, copy it over to s3 bucket.
