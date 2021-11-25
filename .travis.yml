@@ -9,8 +9,7 @@ services:
 before_install:
   - docker build -t averybadtime -f Dockerfile.dev .
 
+#After running npm run test, the terminal will wait for us to input a key.
+#Using docker environment variables CI=true will terminate the terminal after running all the tests
 script:
   - docker run -e CI=true averybadtime npm run test
-
-
-  - docker run -e CI=true USERNAME/docker-react npm run test
