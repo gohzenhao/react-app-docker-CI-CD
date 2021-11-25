@@ -17,6 +17,9 @@ function App() {
         >
           Learn Reactz
         </a>
+        <div>
+          <p>I was changed</p>
+        </div>
       </header>
     </div>
   );
