@@ -13,3 +13,20 @@ before_install:
 #Using docker environment variables CI=true will terminate the terminal after running all the tests
 script:
   - docker run -e CI=true averybadtime npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-southeast-2"
+  app: "docker-react"
+  env: "Dockerreact-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-2-913754430250"
+  bucket_path: "docker-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
+
+#bucket_name
+#when travis deploys your code base, gonna zip all the files in the github repo into a single file, copy it over to s3 bucket.
+#it sends it over to elastic bean stalk, telling them to redeploy it using the zip file
