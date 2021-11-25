@@ -17,6 +17,9 @@ function App() {
         >
           I was changed
         </a>
+        <div>
+          <p>I was changed</p>
+        </div>
       </header>
     </div>
   );
