@@ -26,6 +26,9 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
 
+notifications:
+  slack: konnectapps:nYscqx5zHVdjCdVsvWNFkGd7
+
 #bucket_name
 #when travis deploys your code base, gonna zip all the files in the github repo into a single file, copy it over to s3 bucket.
 #it sends it over to elastic bean stalk, telling them to redeploy it using the zip file
