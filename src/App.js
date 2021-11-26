@@ -15,10 +15,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Reactz
+          Learn React
         </a>
         <div>
-          <p>I was changed</p>
+          <p>I was changed a second time</p>
         </div>
       </header>
     </div>
