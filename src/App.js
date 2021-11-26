@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
         <div>
-          <p>I was changed a second time</p>
+          <p>I was changed a third time</p>
         </div>
       </header>
     </div>
